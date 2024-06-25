@@ -12,6 +12,7 @@ class ClickCounterGame extends HTMLElement {
                 .game-container {
                     text-align: center;
                     margin-top: 50px;
+                    border: 2px dashid blue;
                 }
                 .score {
                     font-size: 2em;
@@ -32,6 +33,7 @@ class ClickCounterGame extends HTMLElement {
                 }
             </style>
             <div class="game-container">
+                <h2>${this._props?.header || ''}</h2>
                 <div class="score">Score: 0</div>
                 <div class="timer">Time left: 10</div>
                 <button class="start-btn">Start Game</button>
